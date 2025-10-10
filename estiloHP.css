@@ -1,1 +1,197 @@
 @charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho final dos elementos */
+    font-family: sans-serif; /* Usar uma fonte simples para começar */
+}
+
+:root {
+    /* Definição das cores principais do layout */
+    --cor-fundo-principal: #5e1c1c; 
+    --cor-destaque-claro: #f0e68c; 
+    --cor-botao-escura: #5e1c1c; 
+    --cor-texto-claro: #ffffff; 
+    --cor-texto-escuro: #333333; 
+}
+body {
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-claro);
+    padding: 0 40px; /* Adiciona um padding nas laterais do corpo */
+}
+
+
+.cabecario {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px; /* Espaço após o cabeçalho */
+    /* Adicionar uma borda inferior ou cor de fundo se necessário para separação visual */
+}
+
+.logo {
+    height: 90px; 
+}
+
+.menu-navegacao {
+    flex-grow: 1; /* Permite que o nav ocupe o espaço restante */
+    margin-left: 50px; /* Espaço entre a logo e o menu */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit; /* Usa a cor do texto do body (Branco) */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Ações do Usuário (Pesquisa e Ícones) */
+.acoes-usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-texto-claro); /* Fundo branco */
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 300px;
+    /* Inclua aqui estilos para os ícones de lupa/microfone se usar imagens */
+}
+
+.barra-pesquisa input[type="search"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.icone-config, .icone-perfil {
+    /* Você deve usar SVGs ou ícones de fonte para ter a aparência da imagem */
+    /* Para demonstração, estou usando o ícone de perfil no HTML. Ajuste o tamanho da imagem. */
+    height: 30px; 
+    width: 30px;
+    cursor: pointer;
+    /* Você precisará estilizar esses elementos para parecerem os ícones na imagem */
+    background-color: #333; /* Cor temporária para visualizar a área do ícone */
+    border-radius: 50%; /* Se forem circulares */
+}
+
+
+.principal {
+     /* Limita a largura do conteúdo principal */
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Destaques da Semana */
+.lista-destaques {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Espaçamento entre os cartões */
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.cartao-destaque {
+    background-color: var(--cor-destaque-claro); /* Fundo amarelo/bege */
+    border-radius: 10px;
+    width: 20%; /* Ajuste a largura para que caibam 5 lado a lado com o gap */
+    aspect-ratio: 1 / 1; /* Garante que o cartão seja um quadrado */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    /* Para o efeito visual arredondado do canto superior direito (como na imagem) */
+    border-top-right-radius: 50px; /* Aumentar para deixar mais acentuado */
+    padding: 10px;
+}
+
+.conteudo-cartao {
+    /* Estiliza o "+" dentro do cartão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3em;
+    color: #999; /* Cor cinza para o "+" */
+}
+
+
+/* Seções Secundárias (Participe e Dica) */
+.secoes-secundarias {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* Alinha o topo das duas caixas */
+    margin-bottom: 50px;
+}
+
+/* Participe da Comunidade */
+.participe {
+    flex-basis: 60%; /* Ocupa cerca de 60% da largura */
+}
+
+.bloco-compartilhar {
+    background-color: var(--cor-destaque-claro);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--cor-texto-escuro);
+}
+
+.chamada {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.botao-adicionar {
+    background-color: var(--cor-botao-escura);
+    color: var(--cor-texto-claro);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-adicionar:hover {
+    background-color: #7b2929; /* Um pouco mais claro no hover */
+}
+
+
+/* Dica da Semana (Aside) */
+.dica-semana {
+    flex-basis: 40%; /* Ocupa cerca de 40% da largura */
+    background-color: rgba(240, 230, 140, 0.5); /* Amarelo/Bege com alguma transparência */
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: var(--cor-texto-escuro); /* Texto escuro para melhor contraste */
+    align-self: flex-end; /* Para que a caixa fique no canto inferior direito da seção (como na imagem) */
+}
+
+.dica-semana h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--cor-botao-escura); /* Cor marrom escuro para o título */
+}
