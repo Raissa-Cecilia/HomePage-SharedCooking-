@@ -18,7 +18,7 @@
 body {
     background-color: var(--cor-fundo-principal);
     color: var(--cor-texto-claro);
-    padding: 0 40px; /* Adiciona um padding nas laterais do corpo */
+    /* Adiciona um padding nas laterais do corpo */
 }
 
 
@@ -39,6 +39,7 @@ body {
 .menu-navegacao {
     flex-grow: 1; /* Permite que o nav ocupe o espaço restante */
     margin-left: 50px; /* Espaço entre a logo e o menu */
+    color: var(--cor-texto-escuro);
 }
 
 .menu {
@@ -49,7 +50,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: inherit; /* Usa a cor do texto do body (Branco) */
+    color: var(--cor-texto-escuro); /* Usa a cor do texto do body (Branco) */
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -181,12 +182,12 @@ h2 {
 /* Dica da Semana (Aside) */
 .dica-semana {
     flex-basis: 40%; /* Ocupa cerca de 40% da largura */
-    background-color: rgba(240, 230, 140, 0.5); /* Amarelo/Bege com alguma transparência */
+    background-color: rgba(240, 230, 140, 0.596); /* Amarelo/Bege com alguma transparência */
     padding: 25px;
     border-radius: 10px;
     font-size: 0.95em;
     line-height: 1.5;
-    color: var(--cor-texto-escuro); /* Texto escuro para melhor contraste */
+    color: var( --cor-texto-claro); /* Texto escuro para melhor contraste */
     align-self: flex-end; /* Para que a caixa fique no canto inferior direito da seção (como na imagem) */
 }
 
@@ -194,4 +195,31 @@ h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: var(--cor-botao-escura); /* Cor marrom escuro para o título */
+    font-weight: bold;
+    
+}
+/* --- Estilos do Rodapé --- */
+.rodape {
+    background-color: var(--cor-texto-claro); /* Usa a cor clara ou outra cor */
+    color: var(--cor-texto-escuro);
+    padding: 30px 40px;
+    text-align: center;
+    margin-top: 50px; /* Espaço para separar do conteúdo principal */
+    width: 100%;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.links-rodape a {
+    color: var(--cor-texto-escuro);
+    text-decoration: none;
+    font-size: 0.85em;
+    padding: 0 5px;
+}
+
+.links-rodape a:hover {
+    text-decoration: underline;
 }
