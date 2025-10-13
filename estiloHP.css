@@ -25,7 +25,7 @@ body {
 .cabecario {
     display: flex;
     background-color: #ffffff;
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    justify-content: center; /* Distribui o espaço entre os elementos */
     align-items: center;
     padding: 20px 0;
     margin-bottom: 40px; /* Espaço após o cabeçalho */
@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-    height: 90px; 
+    height: 95px; 
 }
 
 .menu-navegacao {
@@ -93,7 +93,7 @@ body {
 .principal {
      /* Limita a largura do conteúdo principal */
     margin: 0 auto;
-    background-color: white;
+    background-color: var(--cor-fundo-principal);
     border-radius: 10px;
 }
 
