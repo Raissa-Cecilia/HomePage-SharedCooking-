@@ -18,6 +18,7 @@
 body {
     background-color: var(--cor-fundo-principal);
     color: var(--cor-texto-claro);
+    margin: 1.2px;
     /* Adiciona um padding nas laterais do corpo */
 }
 
@@ -52,9 +53,12 @@ body {
     text-decoration: none;
     color: var(--cor-texto-escuro); /* Usa a cor do texto do body (Branco) */
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 16px;
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
 }
-
+.menu a:hover {
+    color: var(--cor-botao-escura); /* Muda para a cor do botão ao passar o mouse */
+}
 /* Ações do Usuário (Pesquisa e Ícones) */
 .acoes-usuario {
     display: flex;
@@ -68,15 +72,16 @@ body {
     background-color: var(--cor-texto-claro); /* Fundo branco */
     border-radius: 5px;
     padding: 5px 10px;
-    width: 300px;
+    width: 330px;
     /* Inclua aqui estilos para os ícones de lupa/microfone se usar imagens */
 }
 
 .barra-pesquisa input[type="search"] {
-    border: none;
+    border: 1px 1px gray;
+    border-radius: 5px;
     outline: none;
     flex-grow: 1;
-    padding: 5px;
+    padding: 10px;
 }
 
 .icone-config, .icone-perfil {
@@ -86,8 +91,9 @@ body {
     width: 30px;
     cursor: pointer;
     /* Você precisará estilizar esses elementos para parecerem os ícones na imagem */
-    background-color: #333; /* Cor temporária para visualizar a área do ícone */
+    background-color: #ffffff; /* Cor temporária para visualizar a área do ícone */
     border-radius: 50%; /* Se forem circulares */
+    margin-right: 10px;
 }
 
 
