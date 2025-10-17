@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shared Cooking</title>
     <link rel="stylesheet" href="estiloHP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="cabecario">
@@ -16,51 +17,53 @@
                 <li><a href="#">Categorias</a></li>
                 <li><a href="#">Adicionar Receita</a></li>
                 <li><a href="#">Conatato</a></li>
-                </ul>
+            </ul>
         </nav>
 
         <div class="acoes-usuario">
             <div class="barra-pesquisa">
-                <input type="search" placeholder="Buscar receitas...">
-                </div>
-            <img src="imagens/iconeconfiguracao-.webp" alt="Configurações" class="icone-config">
-            <img src="imagens/iconeperfil-.png" alt="Perfil do Usuário" class="icone-perfil">
+                <input type="search" placeholder="Buscar receitas..."> 
+                 <i class="fas fa-search"></i> </div>
+            <i class="fas fa-cog icone-config"></i>
+            <i class="fas fa-user-circle icone-perfil"></i>
         </div>
     </header>
 
     <main class="principal">
-        
-        <section class="destaques">
-            <h2>Destaques da semana</h2>
-            <ul class="lista-destaques">
-                <li class="cartao-destaque"><div class="conteudo-cartao">+</div></li>
-                <li class="cartao-destaque"><div class="conteudo-cartao">+</div></li>
-                <li class="cartao-destaque"><div class="conteudo-cartao">+</div></li>
-                <li class="cartao-destaque"><div class="conteudo-cartao">+</div></li>
-                <li class="cartao-destaque"><div class="conteudo-cartao">+</div></li>
-            </ul>
-        </section>
-
-        <section class="secoes-secundarias">
+        <div class="container">
             
-            <div class="participe">
-                <h2>Participe da comunidade</h2>
-                <div class="bloco-compartilhar">
-                    <p class="chamada">Compartilhe sua receita e inspire outros!</p>
-                    <button class="botao-adicionar">Adicionar receita</button>
+            <section class="destaques">
+                <h2> Destaques da Semana</h2>
+                <ul class="lista-destaques">
+                    <li class="cartao-destaque"><div class="conteudo-cartao">Salada Detox</div></li>
+                    <li class="cartao-destaque"><div class="conteudo-cartao">Pão Caseiro</div></li>
+                    <li class="cartao-destaque"><div class="conteudo-cartao">Torta de Limão</div></li>
+                    <li class="cartao-destaque"><div class="conteudo-cartao">Curry Indiano</div></li>
+                    <li class="cartao-destaque"><div class="conteudo-cartao">Bolo de Cenoura</div></li>
+                </ul>
+            </section>
+
+            <section class="secoes-secundarias">
+                
+                <div class="participe">
+                    <h2>Participe da Comunidade</h2>
+                    <div class="bloco-compartilhar">
+                        <p class="chamada">Compartilhe sua receita e inspire outros cozinheiros!</p>
+                        <button class="botao-adicionar">Adicionar receita</button>
+                    </div>
                 </div>
-            </div>
 
-            <aside class="dica-semana">
-                <h3>Dica da semana</h3>
-                <p>
-                    Para cozinhar melhor, mantenha uma boa organização com o "mise en place", utilize fogo baixo para um controle maior, não sobrecarregue as panelas, e adicione temperos secos aos poucos para evitar queimar o alho. Para preservar a saúde, lave bem os alimentos, mantenha-os refrigerados e use utensílios limpos e adequados, além de ter atenção à higiene na cozinha.
-                </p>
-            </aside>
+                <aside class="dica-semana">
+                    <h3> Dica da Semana</h3>
+                    <p>
+                        Para cozinhar melhor, mantenha uma boa organização com o "mise en place", utilize fogo baixo para um controle maior, não sobrecarregue as panelas, e adicione temperos secos aos poucos para evitar queimar o alho. Para preservar a saúde, lave bem os alimentos, mantenha-os refrigerados e use utensílios limpos e adequados, além de ter atenção à higiene na cozinha.
+                    </p>
+                </aside>
+                
+            </section>
             
-        </section>
+        </div> </main>
 
-    </main>
     <footer class="rodape">
         <p>&copy; 2025 Shared Cooking. Todos os direitos reservados.</p>
         <div class="links-rodape">
